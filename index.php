@@ -50,3 +50,32 @@ if (isset($nombre_controlador) && class_exists($nombre_controlador)) {
 }
 
 require_once 'views/layout/footer.php';
+
+/*
+
+session_start();
+require_once 'autoload.php';
+require_once 'config/db.php';
+require_once 'helpers/utils.php';
+require_once 'config/parameters.php';
+require_once 'views/layout/header.php';
+require_once 'views/layout/sidebar.php';
+function show_error()
+$ = Se utiliza para definir una variable
+new = Es unmetodo que se utiiza para instanciar una calse vulve la laclase en un objeto
+-> = Es un apuntador que permiete acceder a los parametros que contiene actualmenete un elemento 
+if = Se utiliza como condicional
+isset = Se encarga de evaluar si una variable fue declara y si su valor es nulo
+$_GET = ES un metodo de pasaar informacion por medio de la URL
+elseif
+! = Es un operador de negacion 
+&& = Es un operador condicional se encarga de evaluar dos condiciones a la vez donde las dos
+     se deben cumplir para que se ejecuete una accion dentro del progrma
+else = Es un condicional que se activa al moemnto de que el if no se cumple 
+show_error
+exit();
+class_existsexiste
+require_once 'views/layout/footer.php';
+
+
+*/
