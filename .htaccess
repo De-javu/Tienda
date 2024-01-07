@@ -1,15 +1,19 @@
 <IfModule mod_rewrite.c>
 
 # Activar mod_rewrite
-
 RewriteEngine on
+
+# Se crea una ruta de error 404 la cual se redireccionara cada vez que no se encuentre la pagina con 
 ErrorDocument 404 http://localhost/master-php/proyecto-php-poo/error/
+
+# Indica que se rescribira si cumpe con las regla de no ser directori ni archivo
 RewriteCond %{SCRIPT_FILENAME}  !-d
 RewriteCond %{SCRIPT_FILENAME}  !-f
 
+# Si lo anterior se cumple la regla tendra la capacidad de remplazar
 RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
 
 
-
+# NOTA: la ides de este fichero es remplazara las rutas de las url, por formatos mas amigables y rutas mas cortas.
 
 </IfModule>
