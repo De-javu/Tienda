@@ -42,15 +42,13 @@ class UsuarioController{
         header("Location:".base_url.'usuario/registro');
     }
 
-    /**
-     * Método para realizar el inicio de sesión de un usuario.
-     * 
-     * Este método recibe los datos del formulario de inicio de sesión, 
-     * consulta la base de datos para verificar la identidad del usuario 
-     * y crea una sesión si la identificación es exitosa.
-     * 
-     * @return void
-     */
+    /*
+    Metodo para mostrar el formulario de login
+    Método para realizar el inicio de sesión de un usuario.
+    Este método recibe los datos del formulario de inicio de sesión, 
+    consulta la base de datos para verificar la identidad del usuario 
+    y crea una sesión si la identificación es exitosa. 
+    */
     public function login() {
         if(isset($_POST)){
             //Identificar al usuario
@@ -76,17 +74,17 @@ class UsuarioController{
             //Crear una session
         }
 
-        header("Location:".base_url);
+        header("Location:" .base_url);
     }
 
-    /**
-     * Método para cerrar la sesión de un usuario.
-     * 
-     * Este método elimina las variables de sesión relacionadas con la identidad 
-     * y el rol de usuario, y redirige al usuario a la página de inicio.
-     * 
-     * @return void
+    /*
+    
+     Método para cerrar la sesión de un usuario.
+     Este método elimina las variables de sesión relacionadas con la identidad 
+     y el rol de usuario, y redirige al usuario a la página de inicio.
+    
      */
+
     public function logout(){
         if(isset($_SESSION['identity'])){
             unset($_SESSION['identity']);

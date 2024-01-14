@@ -44,10 +44,26 @@ pruebas tienda:
  38) Tambien vamosa a evaluart  la sesion que rol cuemple, si es admin. se creara una $_SESSION['admin'].
  39) de no cumplirse nada de los anterior con la sesion $identity, se creara unmensaje de error
  40) Por ultimo nos redireccionara a la base.url.
- 41) Luego ingresamos a la fichero de views/layout/sidebar.php en este vamos a realizara la conficuguracion correspondiente para que la session no presente el nombre y elpallido del usuario logeado.
- 42) Cramos el nuevo metodo logou en el UserController.php
- 43) 
-
+ 41) Luego ingresamos a la fichero de views/layout/sidebar.php en este vamos a realizara la conficuguracion correspondiente para que la session nos presente el nombre y el pallido del usuario logeado.
+ 42) Cramos el nuevo metodo logout en el UserController.php, el cual es el encargado de eliminar la sesion de usuario
+ 43) Pasamos a la creacion de las categorias 
+ 44) Creamos una ruta en el fichero de categoriaCotroller
+ 45) vamos a la carpeta views y creamos el fichero categorias.php y el fichero index.php
+ 46) Creeamos en la carpeta model y fichero categoria.php
+ 47) En el fichero de models categorias.php, creamos la clase categorias con los datso que se estan agendado en la base de datos, luego creamos los getter y los setter de para estos  datos, cremos un metodo que llamaremos getAll elcual se encargara de realizar la consulta a la base de datos seleccioando las categorias.
+ 48) En el fichero de CategoriasController.php, por medio de requiere_once conectamos el fichero de models/categorias.php, aca llamamos el metodo getALL anterior mente creado y lo instanciamos.
+ 49) vamos al fichero wiews/categoria/index.php, aca creamos una vista la cual nos listara las categoria que contiene la base de datos,tambien creamos hipervinculo por medio de un boton el cual se encargara de redirecciinarnos al fichero encargado de crear las categorias.
+ 50) En el ficherode sidebar.php nos encragamos de ajustar correctamnete las rutas de los enlaces para que nos lleven a donde se desea
+ 51) En controlador de CategoriaController.php, nos encargamos de crear un metodo llamado crear el cual tiene un require_once que nos conecta con las views/categoria/crear.php
+donde tendremos u formulario listo para capturar los datos de la categoria que se desea crear.
+52) En las vistas en el fichero.php creamos el formulario, el cual lleva la informacion de capturada al metodo categoria/save
+53)  luego  vamos al la carpeta fichero utils.php, creamos un metodo para identificar cuando el usuario sea administrador y de esta forma tenga permisos para las acciones selecionadas.
+54) Creamos en el models de catgoria.php, cfear un metodo save para que inserte en el base de datos, la categoria que se desea crear, tambien reforzamos la seguridad en los setter con os real_scape_string, para evitar inyeccion de datos
+55) En el contolador de categoriaConroller.php, Se hace el metodo save elñ cual se encarga de instanciar la clase categoria y de esta forma sacar los datos que se guardan en la base de datos.
+56) en el fichero utils.php, creamos un metodo llamado showcategorisas y con un requiere_onces de models/categoria.php y la losgica para que nos instancie las categorias.
+57) En el fichero header.php, llamamos el metodo showcategorias, creamosd un bucle while el cual nos va listar las categorias , pero en este caso se veran reflejado en la barras del menu.
+58) Fin categorias
+59) 
 
 
 

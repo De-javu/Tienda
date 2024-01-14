@@ -32,6 +32,22 @@ a:hover {/*Lo utilizamos para definir estilo especiales cuando elcursor para sob
     color: red;/*Lo utilizamos para seleccinar el color que se desea para este elemnto*/
 }
 
+table{
+    text-align: center;
+    width: 95%;
+    border: 1px solid #555;
+    margin-left: 19px;
+
+    
+}
+
+td{
+    border-top: 1px solid #ccc;
+    padding: 2px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
 /*CONATINER*/
 #container {/*Utilizamos un id para indicar que se aplicara estilos unicos al elemnto container*/
     width: 80%; /*Se indica el ancho del elemento*/
@@ -234,6 +250,14 @@ button, .button {/*Indica que se aplicara al elemnto botton y la calse button*/
     background: #33AE3D;/*Indica que se aplicara un fondo*/
     color: white !important;/*Se aplicara un color en la letra y se aplica el recurso de import para que sobre escriba */
     text-decoration: none;/*Indica que no se selecciona decoracion al alemnto*/
+}
+
+.button-small{
+    width: 120px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 19px;
+
 }
 
 label, /*Indica que se aplicaran  elementos */

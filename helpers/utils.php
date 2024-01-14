@@ -1,6 +1,7 @@
 <?php
-
+// se crea la clase Utils
 class Utils{
+// Se crea el metodo delateSession
     public static function deleteSession($name){
         if(isset($_SESSION[$name])){
             $_SESSION[$name] = null;
@@ -8,6 +9,23 @@ class Utils{
         }
 
         return $name;
+    }
+
+    //Se crea el metodo isAdmin
+    public static function isAdmin(){
+        if(!isset($_SESSION['admin'])){
+            header("Location:".base_url);
+        }else{
+            return true;
+        }
+    }
+
+    //Se crea el metodo swhocategorias
+    public  static function showCategorias(){
+        require_once 'models/categoria.php';
+        $categoria = new Categoria();
+        $categorias = $categoria->getAll();
+        return $categorias;
     }
 }
 
@@ -25,10 +43,11 @@ null = Se utiliza para evaluar si el valor es nulo
 unset = Esta funcion se utiliza para eliminar variables, las cuales desoues llamaremos y ya no estan 
 return = Se encraga de devolver el valor final de la funcion 
 
-NOTA: Esta es la forma com se crea una calse con la funcion de finida para eliminar las sessiones
-       que estan abiertas y se desean  cerrar de esta forma lo unico que se hacees llamara la funcion
+NOTA: Esta es la forma como se crea una clase con la funcion de finida para eliminar las sessiones
+       que estan abiertas y se desean  cerrar de esta forma lo unico que se haces llamar los metodos
        desde el fichero que se desea.
-
+       Se crea el metodo isAdmin que se encarga de verificar si el usuario es administrador
+       Se crea el metodo shocategorias que se encarga de mostrar las categorias que se encuentran en la base de datos
  */
 
 
