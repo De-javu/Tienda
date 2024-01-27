@@ -272,8 +272,18 @@ button, .button {/*Indica que se aplicara al elemnto botton y la calse button*/
     text-align: center;
     margin-bottom: 20px;
     margin-left: 19px;
-
 }
+
+.button-gestion{
+  margin-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.button-red{
+    background: red;
+    border: 1px solid #cf1717;
+}
+
 
 label, /*Indica que se aplicaran  elementos */
 input[type="button"],/*indica que se aplicaraestilos al input tipo button*/

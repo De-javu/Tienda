@@ -53,25 +53,26 @@ class ProductoController
                 $producto->setCategoria_id($categoria);
 
                 // Guardar la imagen
-                
-                    $file = $_FILES['imagen'];
-                    $filename = $file['name'];
-                    $mimetype = $file['type'];
-                 
-                   
 
-                    if($mimetype == "image/jpg" || $mimetype == "image/jpeg" || $mimetype == "image/png" || $mimetype == "image/gif");
-                    
-                
-                     if(!is_dir('uploads/images')){
-                        mkdir('uploads/images', 0777, true);
-                     }
+                $file = $_FILES['imagen'];
+                $filename = $file['name'];
+                $mimetype = $file['type'];
 
-                     $producto->setImagen($filename);
-                    
-                     move_uploaded_file($file['tmp_name'], 'uploads/images/'.$filename);
-                    
-               
+
+
+                if ($mimetype == "image/jpg" || $mimetype == "image/jpeg" || $mimetype == "image/png" || $mimetype == "image/gif")
+                    ;
+
+
+                if (!is_dir('uploads/images')) {
+                    mkdir('uploads/images', 0777, true);
+                }
+
+                $producto->setImagen($filename);
+
+                move_uploaded_file($file['tmp_name'], 'uploads/images/' . $filename);
+
+
 
                 $save = $producto->save();
                 if ($save) {
@@ -83,18 +84,35 @@ class ProductoController
                 $_SESSION['producto'] = 'failed';
             }
         } else {
-            $_SESSION['producto'] = 'failed'; 
+            $_SESSION['producto'] = 'failed';
         }
-       header("Location:".base_url."producto/gestion");
-
-
-
-
-
-
-
+        header("Location:" . base_url . "producto/gestion");
     }
 
+    public function editar()
+    {
+        var_dump($_GET);
+    }
+
+    public function eliminar()
+    {
+        Utils::isAdmin();
+        if (isset($_GET['id'])) {
+            $id = $_GET['id'];
+            $producto = new Producto();
+            $producto->setId($id);
+
+            $delete = $producto->delete();
+            if ($delete) {
+                $_SESSION['delete'] = 'complete';
+            } else {
+                $_SESSION['delete'] = 'failed';
+            }
+        } else {
+            $_SESSION['delete'] = 'failed';
+        }
+        header("Location:" . base_url . "producto/gestion");
+    }
 
 }
 
