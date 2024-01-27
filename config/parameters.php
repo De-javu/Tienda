@@ -5,4 +5,3 @@ define("action_default", "index"); // Se define la constante antes de la, y el v
 
 //defiene = Se utilizan para definir una constantes a las cuales se pueden acceder desde 
 //          cualquier parte del codigo.  
-?>

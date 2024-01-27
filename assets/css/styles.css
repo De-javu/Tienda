@@ -196,15 +196,26 @@ td{
 }
 /*FORMS*/
 
+.form_container{/*Indica que se aplicaran estilos al id form_container*/
+    width: 50%;
+    margin-left: 250px;   
+
+
+}
+
 label, /*Indica que se seleccinaran los input y el que debe ir en esos campos */
 input[type="text"], /*<Seleccion del campo  input de tipo texto*/
 input[type="password"], /*Seleccion del campo de tipo password*/
 input[type="email"],/*Seleccion de l campo de tipo email*/
-select { /*Se utiliza com una lista multiple de acciones a ejecutar */
+input[type="number"],/*Seleccion del campo de tipo number*/
+input[type="date"],/*Seleccion del campo de tipo date*/
+input[type="file"],/*Seleccion del campo de tipo file*/
+select, textarea { /*Se utiliza com una lista multiple de acciones a ejecutar */
     display: block;/*Indica que se tratara el elemnto como un display block*/
-    width: 95%;/*Se selecciona el nachio de la pagina */
-    margin-top: 2px;/*Indica que se tendra un margen superior de 2px*/
-    margin-bottom: 2px;/*Indica que se tendra una margen inferior de 2px*/
+    width: 90%;/*Se selecciona el nachio de la pagina */
+    margin-top: px;/*Indica que se tendra un margen superior de 2px*/
+    margin-left: 28px;
+    margin-bottom: 3px;/*Indica que se tendra una margen inferior de 2px*/
 }
 label{/*Se seleccionan los elementos label los caules e le alicaran estilos*/
     display: block;/*Indica que se trabajara como un bloque*/
@@ -214,7 +225,10 @@ label{/*Se seleccionan los elementos label los caules e le alicaran estilos*/
 input[type="text"],/*Se selccioan el elemnto input de tipo texto*/
 input[type="password"],/*Se selecciona el eelemnto input de tipo password*/
 input[type="email"],/*Se selecciona el elemento input de tipo email*/
-select {/*Se aplica un selector indicando los efectos que se aplicaran */
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select, textarea {/*Se aplica un selector indicando los efectos que se aplicaran */
     border: 1px solid #C9C9C9;/*Indica que tiene un borde 1psx solido con color*/
     box-shadow: 0px 0px 2px #CCC inset;/*Se aplicara un sombreado dentro del elemento*/
     background: white;/*Se utiliza para aplicar el color de fondo que se desea*/
@@ -235,6 +249,7 @@ input[type="submit"],/*Indica que s eaplicara estilos a los input de tipo submit
 button, .button {/*Indica que se aplicara al elemnto botton y la calse button*/
     display: block;/*Indica que se trabajara coomo un bloque */
     margin-top: 10px;/*Se indica que se aplicara margen de 10px */
+    margin-left: 28px;
     border-radius: 2px;/*Se aplicara bordese redondos en las esquinas del elemento*/
     width: auto;/*Indica que se aplicara un ancho en automatico*/
     padding: 5px;/*Idica que se aplicara pading en los costados del elemento */

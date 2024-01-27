@@ -1,5 +1,6 @@
 <?php
 require_once 'models/usuario.php';
+require_once 'helpers/utils.php';
 class UsuarioController{
      public function index(){
         echo "Controlador Usuario, Accion index";
@@ -29,7 +30,7 @@ class UsuarioController{
             if($save){
                 $_SESSION['register'] = "complete";
             }else{
-                $_SESSION['register'] = "ha fallado";
+                $_SESSION['register'] = "failed";
             }
             
         }else{
@@ -50,6 +51,7 @@ class UsuarioController{
     y crea una sesión si la identificación es exitosa. 
     */
     public function login() {
+
         if(isset($_POST)){
             //Identificar al usuario
             //Consultar a la base de datos desde el modelo usuario
@@ -74,7 +76,9 @@ class UsuarioController{
             //Crear una session
         }
 
-        header("Location:" .base_url);
+        header("Location:".base_url);
+    
+
     }
 
     /*
@@ -84,8 +88,11 @@ class UsuarioController{
      y el rol de usuario, y redirige al usuario a la página de inicio.
     
      */
+    
 
     public function logout(){
+
+    
         if(isset($_SESSION['identity'])){
             unset($_SESSION['identity']);
         }
@@ -95,6 +102,8 @@ class UsuarioController{
         }
 
         header("Location:".base_url);
+
+        
     }
 
 }

@@ -8,7 +8,7 @@
 <?php endif?>
 
 <!-- // se en carga de cerrar la session -->
-<?php Utils::deleteSession('register');?>
+<?php Utils::deleteSession('register'); ?>
 
 <!-- indica que es el inicin del formulario -->
 <form action="<?=base_url?>usuario/save" method="POST">
@@ -34,7 +34,6 @@ strong = Se utiliza para brindar un enfoque especial a las palabras que encierra
 class="alerts_green" = Indica que es una clase de alertas en color verde.
 class="alerts_red" = Indica que es una calse de alertas en color rojo.
 
-<?php
 /*
 if = Se utiliza como condicional.
 isset = Se encarga de evaluar si una variable ya fue declara y si su valor es nulo.
@@ -52,7 +51,7 @@ elseif = Funciona igual que if y el else la diferencia radica en que cuando el i
 endif = Indica que es el fin.
 Utils::deleteSession('register') = Esta clase se utiliza para cerrar la session.
 form action = Indica la ruta a la cual nos llevara la logica del programa a recojer los datos
-<?=base_url?>usuario/save"  = Es una ruta predefinida que se encarga de ejecutar una accion
+?=base_url? usuario/save"  = Es una ruta predefinida que se encarga de ejecutar una accion
 method = Indica el tipo de metodo el cual enviara los datos a la base de datos 
 POST = Indica que los datos recopilados por el formulario seran envidos por este metodo
 label for = Se utiliza para indicar el tipo de entrada que tendra y asociara el nombre 

@@ -1,3 +1,10 @@
+<?php 
+    // Add the import statement for the Utils class
+    require_once 'helpers/utils.php';
+    
+   
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -19,8 +26,8 @@
         </header>
 
         <!-- MENU -->
-        <?php $categorias = Utils::showCategorias(); ?>
-     
+        
+        <?php $categorias = Utils::showCategorias(); ?> 
          <nav id="menu">
             <ul>
                 <li>

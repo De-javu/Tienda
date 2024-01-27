@@ -190,4 +190,3 @@ NOTA: Este fichero se encraga de crea crear una clase que tiene unos objetos los
       metodo save = Se encarga de guardar los datos en la base de datos
       metodo login = Se encarga de validar que el usuario esta registrado en la base de datos.
 */
-?>
