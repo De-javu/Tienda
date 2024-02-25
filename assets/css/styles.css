@@ -332,10 +332,12 @@ button{/*Se aplicara los estilos a esta seccion de buttos*/
     margin-left: 10px;/*Se aplicara un margen al costado izquierdo de 10px*/
     margin-right: 10px;/*Se aplicara un margen al costado derecho de 10px*/
     text-align: center;/*Se centrara el texto dentro del elemento*/
+    margin-bottom: 30px;
 }
 .product img{/*Indica que se aplicara estilos a la clase product del en el elemnto img*/
-    width: 100px;/*Se aplicara un ancho al elento de 100px*/
+    height: 170px; /*Se aplicara un ancho al elento de 100px*/
     margin-bottom: 10px;/*Se aplicara una margen inferior de 10px*/
+
 }
 
 
