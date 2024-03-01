@@ -56,6 +56,11 @@ class Categoria
         return $categorias;
     }
 
+    public function getOne(){
+        $categoria = $this->db->query("SELECT * FROM categorias WHERE id = {$this->getId()}");
+        return $categoria->fetch_object();
+    }
+
     //Guarda una nueva categoría en la base de datos.
      
     public function save()

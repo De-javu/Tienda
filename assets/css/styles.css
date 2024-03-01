@@ -334,6 +334,15 @@ button{/*Se aplicara los estilos a esta seccion de buttos*/
     text-align: center;/*Se centrara el texto dentro del elemento*/
     margin-bottom: 30px;
 }
+
+.product a{
+    color: black;
+    text-decoration: none;
+}
+
+.product a:hover{
+    color: #555;
+}
 .product img{/*Indica que se aplicara estilos a la clase product del en el elemnto img*/
     height: 170px; /*Se aplicara un ancho al elento de 100px*/
     margin-bottom: 10px;/*Se aplicara una margen inferior de 10px*/
@@ -352,6 +361,57 @@ button{/*Se aplicara los estilos a esta seccion de buttos*/
     color: #555;/*Se seleccioa el color deseado para la ltra*/
     margin-bottom: 10px;/*Se aplica un margen inferior de 10px*/
 }
+
+#detail-product{
+    width: 100%;
+  
+
+}
+
+#detail-product .image{/*Se aplicaran estilos a la clase detall-product*/
+    display: block;/*Se indica que se trabajara como un bloque*/
+    width:50%;/*Se aplicara un ancho de 60%*/
+    height: 400px;/*Se aplicara un alto automatico*/
+    float: left;/*Se flotara el elemnto al costado derecho*/
+    margin-right: 20px;/*Se aplicara un margen al costado derecho de 20px*/
+
+}
+
+#detail-product img{/*Se aplicaran estilos a la clase detall-product en el elemnto img*/
+    display: block;/*Se indica que se trabajara como un bloque*/
+    width: 100%;/*Se aplicara un ancho de 100%*/
+    height: 100%;/*Se aplicara un alto automatico*/
+    float: left;/*Se flotara el elemnto al costado derecho*/
+    margin-left: 20px;
+}
+
+#detail-product .data{/*Se aplicaran estilos a la clase detall-product*/
+    width: 40%;
+    float: right;
+
+}
+
+#detail-product .description{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;    
+}
+
+#detail-product .precie{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;    
+}
+#detail-product .button{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+
+ 
+ 
 
 /*FOOTER*/
  #footer{/*Se utiliza para indicar que se aplicaran estilos al id fotter de la pagina  */
