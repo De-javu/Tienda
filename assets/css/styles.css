@@ -432,6 +432,13 @@ button{/*Se aplicara los estilos a esta seccion de buttos*/
  }
 
 /*CARRITO*/
+.delete-carrito{
+    float: left;
+    margin-top: 36px;
+    font-size: 20px;
+
+}
+
 .total-carrito{
     float: right;
     margin-right: 20px;
@@ -439,6 +446,16 @@ button{/*Se aplicara los estilos a esta seccion de buttos*/
     font-size: 20px;
 
 }
+
+.button-carrito{
+  
+    width: 120px;
+    margin: 0px auto;
+    text-align: center;
+
+
+}
+
 
 .total-carrito h3{
     margin-right: 10px;
@@ -448,9 +465,20 @@ button{/*Se aplicara los estilos a esta seccion de buttos*/
     width: 160px;
     margin-bottom: 10px;
     text-align: center;
- 
+ }
 
+.updown-unidades{
+    width: 55%;
+    margin: 0px auto;
 }
+ .updown-unidades .button{
+    display: block;
+    width: 20px;
+    float: left;
+    padding: 2px;
+    margin-left: 5px;
+
+ }
 /* 
 NOTA: Se realizaron todos los ajustes para brindar un diseño amigable entre el usuario y la
       interface del programa con animos de lograr crear un pagina web con la forma y la vista 
