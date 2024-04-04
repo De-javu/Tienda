@@ -1,0 +1,486 @@
+/*Ajustes generales*/
+
+
+*{/*Se utiliza para implementar estilos generales*/
+    padding: 0px; /*Se inicializan los padin de los 4 lados */
+    margin: 0px; /*Se inicualizan las margenes de los 4 lados*/
+    font-family: sans-serif, Arial, Helvetica; /*Se establece el tipod eletra que se usara em la web*/
+}
+
+body {/*Se utiliza como el cuerpo principal de la web*/
+    background-color: rgb(245, 242, 237);/*Se establece el fondo */
+}
+
+a {/*Lo utilizamos para ingresar al metood a de laweb y poner estilos epesificos */
+    color: #01B1EA;/*Indicamos que el color que se desea*/
+}
+
+
+a:visited {/*Lo utilizamos para modificar el color d elos enlaces visitados*/
+    color: #01B1EA;/*Asignamos elcolor que se desea*/
+}
+
+a:hover {/*Lo utilizamos para definir estilo especiales cuando elcursor para sobre los elemntos <a> */
+    color: #555555;/*Asigmaos el color que se desea*/
+}
+
+.alerts_green{/*Permiete ingresar a las clases de este elemento en egenral y aplicar un estilo*/
+    color: green;/*lo utilizamos para selecioanr el color que se desee para el elemnto*/
+}
+
+.alerts_red{/*Permiete ingresar a las clases de este elemento en egenral y aplicar un estilo*/
+    color: red;/*Lo utilizamos para seleccinar el color que se desea para este elemnto*/
+}
+
+table{
+    text-align: center;
+    width: 95%;
+    border: 1px solid #ccc;
+    margin-left: 19px;
+
+    
+}
+
+td{
+    border-top: 1px solid #ccc;
+    padding: 2px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.thumb{
+    background : red;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-left: 29px;
+
+
+}
+
+/*CONATINER*/
+#container {/*Utilizamos un id para indicar que se aplicara estilos unicos al elemnto container*/
+    width: 80%; /*Se indica el ancho del elemento*/
+    margin: 0px auto;/*Aplicamos margen de 0px para arriba y abajo y los costado sera automatica*/
+    box-shadow: 0px 0xp 10px gray;/*aplicamos un sombreado en la pagina */
+    background-color: white;/*Indicamos el color de fondo que se desea para este elemnto*/
+
+}
+
+
+/*HEADER*/
+
+#header {/*Se indica que header titne un id que aplicara estilos solo a este elemnto*/
+    height: 145px;/*Aplicaremos un alto del eelemnto de 145px*/
+    background: #F0F0F0;/*utilizaremos un color de fondo para este elemento*/
+}
+
+#logo {/*Se utiliza para indicar que el logo tendra un id, apara plicar estilos solo a este elemento*/
+    float: left;/*Se pone el elemnto a flotar sobre la izquierda*/
+    padding: 20px;/*Se aplica un padiing ala elmento en los sus cuatro costados */
+    margin-left: 20px;/*Se aplica un margen de al costado izquierdo del elemento*/
+}
+
+
+#logo img { /*Se aplicara estilos al id del logo en su aparado de img*/
+    float: left;/*Se indica que sera unelemnto flotante al costado izquierdo*/
+    height: 100px;/*el elemnto tendra un alto de 100px*/
+
+}
+
+#logo a {/*Se aplicaran estilos al logo en elke lemmto a ppor edio de in id  unico paar el elemto */
+    float: left;/*Se utiliza para indicar que se aplicara flotado al costado izquierdo*/
+    font-size: 45px;/*Se aplicara un otamaño de letra dse 45px*/
+    letter-spacing: 4px;/*Se utiuliza para indicar el espacio entre caracteres*/
+    font-family: 'Open Sans', Arial, Helvetica;/*Asignamos el estilo de letra para etse elemento*/
+    text-transform: uppercase;/*Se utiliza para indicar que se pondra las letras del este elemnto en mayusculas*/
+    color: #01B1EA;/*Indicamos el color que se desea para la letra de este elemento*/
+    font-weight: bold;/*SE utiliza para indicar que se trabara el elemnto en negrita*/
+    text-decoration: none;/*Indicamos que no se sdesea ninguna decoracion para este elemento*/
+    margin-top: 18px;/*Se aplicara un margen en los 4 costado de 18px*/
+    margin-left: 25px;/*Se aplicara un margen al costado izquierdo de 25px*/
+    text-shadow: 0px 2px 1px #222222;/*Se aplicara un sombreado al elemnto*/
+    transition: all 300ms;/*Aplicamos un efecto de desplazamioento para el elemento*/
+
+}
+
+#logo a:hover {/* Lo utilizamos para definir estilos especiales cuando el pulsor pase sobre el elemnto seleccinado con este id*/
+    text-shadow: 0px 2px 1px #222222, 0px 0px 4px #01B1EA;/*Indica que se aplicara sombreado a este elemento*/
+}
+
+
+/*MENU*/
+#menu {/*Indicamos que el menu tendra un id unico para aplicat estilos a este elemento*/
+    clear: both;/*Se utiliza para que los elemntos no se sobre pongan, si no que se ubiquen debajo del otro elemento*/
+    background-color: #222;/*Indica el color que tendra el fondo del  elemento*/
+    color: white;/*Indica el color que tendra la ltera del elemnto*/
+    height: 55px;/*Indica el alto que tendra el elemento*/
+    border-bottom: 4px solid #01B1EA;/**/
+
+}
+
+
+#menu a:first-child {/*Se utiliza para indicar que el primer enlace del menu id se aplicara un estilo */
+    border-left: 1px solid #363636;/*Se aplica un borde al costado izquierdo del elemento*/
+}
+
+#menu a:hover {/*Se utiliza para aplicar estilos al menu id cuando pase el cursor sobre el*/
+    background-color: #01B1EA;/*Se aplicara un color de fondo*/
+}
+
+#menu ul {/*Se aplicara estilos al id menu la lista ul*/
+    list-style: none;/*No se aplicara estilos */
+    text-decoration: none;/*No se aplicara decoraciones*/
+    margin: 0px auto;/*margin arriba abajo sera de 0px, en los costados sera automatico*/
+    margin-left: 25px;/*Tendra un margin izquierdo de 25px*/
+}
+
+#menu ul li {/*Se aplicara estilos al id  menu dentro de ul y enficado en los li*/
+    line-height: 55px;/*Se utiliza para indicar que se aplicara un alto al texto*/
+    float: left;/*Se indica que ele lemnto se flotara a la izquierda*/
+    border-right: 1px solid #363636;/*Se aplicaran bordes*/
+}
+
+#menu a {/*Se aplicara estilos ll id menu en el elemnto a*/
+    display: block;/*Indica que s etrabajara como un bloque */
+    color: white;/*Tendra un color */
+    text-decoration: none;/*No tendra ningun tipó de decoracion*/
+    padding-left: 12px;/*Se aplicara un padding a la izquierda de 12px*/
+    padding-right: 12px;/*Se aplicara un padding a la deerecha de 12pz*/
+    transition: all 300ms;/*Tendra un un efecto */
+}
+
+
+
+/*CONTENT*/
+#content {/*Se aplicaran estilos al id content*/
+    
+    margin: 0px auto;/*Se aplicaran estilos arriba y abajo y los laterales dsera automatico */
+    overflow: hidden;/*Se aplica para mantener los campos correctamente dentrp de los estandares*/
+    background: white;/*Indica que tendra un color de fondo segu se desee*/
+}
+
+/*BARRA LATERAL*/
+#lateral{/*Indica que se aplicaran estilos al id lateral */
+    
+    width: 22%;/*Se apliacara un tamaño de un ancho 22%*/
+    float: left;/*Se aplicara flotado al costado izquierdo*/
+    min-height: 500px;/*Se aplica un minimo de tamaño en alto para el elemento*/
+    margin-top: 20px;/*Se aplicara un margen superior de 20px*/
+    margin-left: 15px;/*Se aplicara un margen izquiero de 15px*/
+    border: 1px solid black;/*Se aplicara un borde */
+}
+
+#lateral .block_aside {/*Se aplicara estilos id al lateral slecciando la clase block_aside*/
+    display: block;/*Indica que se trabajara como un bloque */
+    width: 90%;/*Tendra un ancho el elemnto de un 90%*/
+    margin: 5px auto;/*Tendra una margen de 5px arriba y abajo , los costados sera automatico*/
+    padding: 10px;/*tendra u padding en los 4 costaos del elemnto de 10px*/
+
+}
+
+#lateral h3 {/*Indicamos que se utilizara estilos en el id lateral pero dentro dele lemnto h3*/
+    display: block;/*Indica que se trabajara como un bloque */
+    color: black;/*Se utiliza para seleccinar el color que se desea*/
+    width: 100%;/*Se indica que ancho que se desea para este elemento*/
+    text-align: center;/*Se utiliza para indicar que se desea lainear el texto en el centro */
+    padding-top: 2px;/*Se utiliza para indicar que el padding superior tendra 2px*/
+    padding-bottom: 2px;/*Se utiliza para indicar que el padding inferior tendra un pading de 2px*/
+    margin-bottom: 15px;/*Se indica que el margen inferior sera de 15px*/
+    font-size: 16px;/*Se aplicara un tamaño en el tecto de 16px*/
+    font-weight: bold;/**/
+    background: #E1E1E1;/*Se aplicara un fondo en este color */
+    border-bottom: 2px solid #01B1EA;/*permiete indicar el grosor inferior y el color del borde en una sola linea */
+}
+
+#lateral ul{/*Indica que se aplicara estilos al id lateral de los elemntos ul*/
+    margin-top: 20px;/*se palicara un margen superior de 20px*/
+    margin-bottom: 20px;/*Se aplicara unn margen inferior de 20px*/
+}
+
+#lateral ul li{/*Indica que se aolicara un id en el lateral del elemnto ul y loes li*/
+    list-style: square;/*Permiete remplazar los maracadores en el listado il */
+    margin-left: 20px;/*Indica que se aplicara un margen al costado izquierdo de 20px*/
+    margin-top: 5px;/*Indica que se aplicara un margen superior de 5px*/
+    margin-bottom: 5px;/*Indica que se aplicara unmargen inferior de 5px*/
+}
+/*FORMS*/
+
+.form_container{/*Indica que se aplicaran estilos al id form_container*/
+    width: 50%;
+    margin-left: 250px;   
+
+
+}
+
+label, /*Indica que se seleccinaran los input y el que debe ir en esos campos */
+input[type="text"], /*<Seleccion del campo  input de tipo texto*/
+input[type="password"], /*Seleccion del campo de tipo password*/
+input[type="email"],/*Seleccion de l campo de tipo email*/
+input[type="number"],/*Seleccion del campo de tipo number*/
+input[type="date"],/*Seleccion del campo de tipo date*/
+input[type="file"],/*Seleccion del campo de tipo file*/
+select, textarea { /*Se utiliza com una lista multiple de acciones a ejecutar */
+    display: block;/*Indica que se tratara el elemnto como un display block*/
+    width: 90%;/*Se selecciona el nachio de la pagina */
+    margin-top: px;/*Indica que se tendra un margen superior de 2px*/
+    margin-left: 28px;
+    margin-bottom: 3px;/*Indica que se tendra una margen inferior de 2px*/
+}
+label{/*Se seleccionan los elementos label los caules e le alicaran estilos*/
+    display: block;/*Indica que se trabajara como un bloque*/
+    margin-top: 10px;/*Se aplicara un margen superior de 20px*/
+}
+
+input[type="text"],/*Se selccioan el elemnto input de tipo texto*/
+input[type="password"],/*Se selecciona el eelemnto input de tipo password*/
+input[type="email"],/*Se selecciona el elemento input de tipo email*/
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select, textarea {/*Se aplica un selector indicando los efectos que se aplicaran */
+    border: 1px solid #C9C9C9;/*Indica que tiene un borde 1psx solido con color*/
+    box-shadow: 0px 0px 2px #CCC inset;/*Se aplicara un sombreado dentro del elemento*/
+    background: white;/*Se utiliza para aplicar el color de fondo que se desea*/
+    padding: 4px;/*Indica que se tendra 4px de espacio en los 4 lados del elemento*/
+    color: gray;/*Se utiliza para sellecionar el color del texto*/
+    transition: all 300ms;/*Se utuliza para aplicar efectos de movimento */
+}
+
+input[type="text"]:focus,/*Indica que se aplicaran estilos al moento de poner el cursos sobre el elemento input*/
+input[type="password"]:focus,/*Indica que se aplicaran estilos al moento de poner el cursos sobre el elemento input*/
+input[type="email"]:focus {/*Indica que se aplicaran estilos al moento de poner el cursos sobre el elemento input*/
+    border: 2px solid #1579B5;/*Se aplicara un borde */
+    color: black;/*Se selecciona el color de los elementos */
+}
+
+input[type="button"],/*Se indica que se aplicara estilos al los input de tipo button */
+input[type="submit"],/*Indica que s eaplicara estilos a los input de tipo submit*/
+button, .button {/*Indica que se aplicara al elemnto botton y la calse button*/
+    display: block;/*Indica que se trabajara coomo un bloque */
+    margin-top: 10px;/*Se indica que se aplicara margen de 10px */
+    margin-left: 28px;
+    border-radius: 2px;/*Se aplicara bordese redondos en las esquinas del elemento*/
+    width: auto;/*Indica que se aplicara un ancho en automatico*/
+    padding: 5px;/*Idica que se aplicara pading en los costados del elemento */
+    padding-left: 10px;/*Se aplicara un espacio interno al costado izquierdo del elemento*/
+    padding-right: 10px;/*Se aplicara un espacio interno al costado derecho del elemnto*/
+    color: white;/*El color de la letra sera blanco seguin la seleccion */
+    background: #2979CD;/*Se utiliza para indicar el color de fondo que tendra este elemento*/
+    border: 1px solid #11608E;/*Se aplicara un borde solido y con un color definido*/
+    cursor: pointer;/*Indica que el cursor se convertira en otro figura la cual se volver interactivo  */
+}
+
+.button{/*Indica que se aplicaran estilos a las calse button */
+    background: #33AE3D;/*Indica que se aplicara un fondo*/
+    color: white !important;/*Se aplicara un color en la letra y se aplica el recurso de import para que sobre escriba */
+    text-decoration: none;/*Indica que no se selecciona decoracion al alemnto*/
+}
+
+.button-small{
+    width: 120px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 19px;
+}
+
+.button-gestion{
+  margin-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.button-red{
+    background: red;
+    border: 1px solid #cf1717;
+}
+
+
+label, /*Indica que se aplicaran  elementos */
+input[type="button"],/*indica que se aplicaraestilos al input tipo button*/
+input[type="Submit"],/*Indica que se aplicarn estilos al input de tipo submit*/
+button{/*Se aplicara los estilos a esta seccion de buttos*/
+    display: block;/*Indica que se tratara el elemnto como un bloque */
+    margin-top: 10px;/*Indica que se aplicara unmargen superior de px*/
+}
+
+/*CENTRAL*/
+#central{/*Indica que se aplicara estilos al id del elemnto central*/
+    width: 75%;/*Indica el ancho que se aplicara al elemento*/
+    min-height: 500px;/*Se aplicara un minimo en el alto del elemento*/
+    float: right;/*Se flotara el elemnto al costado izquierdo*/
+    border-left: 1px solid #ccc;/*Indica que se aplicara borde a la izquiewrda del elemento*/
+    box-shadow: -5px -1px 5px #ddd;/*Indica que se aplicara un sombreado del elemento*/
+    padding: 25xp;/*Se aplicara un padding en los cuatros castados del elemnto de 25px*/
+}
+
+#central h1{/*Se aplicaran estilos al id central del elmenbto h1 */
+    font-size: 35px;/*Se aplicara un tamaño de letra de 35px*/
+    font-weight: normal;/*Indica el grosor de la letra*/
+    letter-spacing: 1px;/*Indica el espacio que utilizara entre letras */
+    text-align: center;/*Indica que se centrara el texto*/
+    border-bottom: 1px solid #ccc;/*Se aplicara un borde al inferior del elemento*/
+    margin-bottom: 20px;/*Se aplicara un margen a la parte inferior del elemento */
+    padding-top: 20px;/*Se aplicara un padding superior de 20px*/
+    padding-bottom: 20px/*Se aplicara pading a la parte inferior*/;
+
+}
+
+
+/*PRODUCTOS*/
+.product{/*Indica que se aplicarn estilos a la calse product*/
+    width: 30%;/*Tiene un ancho del 30%*/
+    float: left;/*Indica que se flotara el emento al costado izquierdo*/
+    margin-left: 10px;/*Se aplicara un margen al costado izquierdo de 10px*/
+    margin-right: 10px;/*Se aplicara un margen al costado derecho de 10px*/
+    text-align: center;/*Se centrara el texto dentro del elemento*/
+    margin-bottom: 30px;
+}
+
+.product a{
+    color: black;
+    text-decoration: none;
+}
+
+.product a:hover{
+    color: #555;
+}
+.product img{/*Indica que se aplicara estilos a la clase product del en el elemnto img*/
+    height: 170px; /*Se aplicara un ancho al elento de 100px*/
+    margin-bottom: 10px;/*Se aplicara una margen inferior de 10px*/
+
+}
+
+.img_carrito{
+    height: 100px;
+    margin-bottom: 10px;
+    font-display: block;
+    margin: 10px auto;
+}
+
+
+.product h2{/*Se aplicara estilos a la clase product en ele elemento h2*/
+
+    font-size: 18px;/*Se selecciona le tamaño de letra deseado*/
+    margin-bottom: 10px;/*Se apicara un margen inferior de 10px*/
+}
+
+.product p{/*Se aplicaran estilos a la calse prosuct en el elemnto p*/
+    font-weight: bold;/*Se aplicara un estilos de letra en negrita*/
+    color: #555;/*Se seleccioa el color deseado para la ltra*/
+    margin-bottom: 10px;/*Se aplica un margen inferior de 10px*/
+}
+
+#detail-product{
+    width: 100%;
+  
+
+}
+
+#detail-product .image{/*Se aplicaran estilos a la clase detall-product*/
+    display: block;/*Se indica que se trabajara como un bloque*/
+    width:50%;/*Se aplicara un ancho de 60%*/
+    height: 400px;/*Se aplicara un alto automatico*/
+    float: left;/*Se flotara el elemnto al costado derecho*/
+    margin-right: 20px;/*Se aplicara un margen al costado derecho de 20px*/
+
+}
+
+#detail-product img{/*Se aplicaran estilos a la clase detall-product en el elemnto img*/
+    display: block;/*Se indica que se trabajara como un bloque*/
+    width: 100%;/*Se aplicara un ancho de 100%*/
+    height: 100%;/*Se aplicara un alto automatico*/
+    float: left;/*Se flotara el elemnto al costado derecho*/
+    margin-left: 20px;
+}
+
+#detail-product .data{/*Se aplicaran estilos a la clase detall-product*/
+    width: 40%;
+    float: right;
+
+}
+
+#detail-product .description{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;    
+}
+
+#detail-product .precie{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;    
+}
+#detail-product .button{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+
+ 
+ 
+
+/*FOOTER*/
+ #footer{/*Se utiliza para indicar que se aplicaran estilos al id fotter de la pagina  */
+    clear: both;/*Se utiliza para indicarque los elemntos no se sobre escriban*/
+    text-align: center;/*Se utiliza paara indicar que se centrara el texto*/
+    padding-top: 10px;/*Se utiliza para indicar que el paddin superior de 10px*/
+    padding-bottom: 10px;/*Se utilizan para indicar que pondra padding inferior*/
+    color: white;/*El color de la ltra sera blanco*/
+    background: #222222;/*El fondo del elemnto se sellciona asi*/
+    border-top: 4px solid #01B1EA;/*Se aplicara un borde alñ alemento*/
+ }
+
+/*CARRITO*/
+.delete-carrito{
+    float: left;
+    margin-top: 36px;
+    font-size: 20px;
+
+}
+
+.total-carrito{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+.button-carrito{
+  
+    width: 120px;
+    margin: 0px auto;
+    text-align: center;
+
+
+}
+
+
+.total-carrito h3{
+    margin-right: 10px;
+}
+.button-pedido{
+    display: block;
+    width: 160px;
+    margin-bottom: 10px;
+    text-align: center;
+ }
+
+.updown-unidades{
+    width: 55%;
+    margin: 0px auto;
+}
+ .updown-unidades .button{
+    display: block;
+    width: 20px;
+    float: left;
+    padding: 2px;
+    margin-left: 5px;
+
+ }
+/* 
+NOTA: Se realizaron todos los ajustes para brindar un diseño amigable entre el usuario y la
+      interface del programa con animos de lograr crear un pagina web con la forma y la vista 
+      necessria para el desarrollo de la activida y la tienda de camisetas. 
+*/
